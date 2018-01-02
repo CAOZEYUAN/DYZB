@@ -15,6 +15,8 @@
 		183C793D1FFB74F9003D776A /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183C793C1FFB74F9003D776A /* Live.storyboard */; };
 		183C793F1FFB7528003D776A /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183C793E1FFB7528003D776A /* Follow.storyboard */; };
 		183C79411FFB7543003D776A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183C79401FFB7543003D776A /* Profile.storyboard */; };
+		183C79491FFB78AA003D776A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C79481FFB78AA003D776A /* HomeViewController.swift */; };
+		183C794C1FFB7F7B003D776A /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183C794B1FFB7F7B003D776A /* UIBarButtonItem-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		183C793C1FFB74F9003D776A /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Live.storyboard; sourceTree = "<group>"; };
 		183C793E1FFB7528003D776A /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Follow.storyboard; sourceTree = "<group>"; };
 		183C79401FFB7543003D776A /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		183C79481FFB78AA003D776A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		183C794B1FFB7F7B003D776A /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +97,9 @@
 		183C79351FFB72F0003D776A /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				183C793A1FFB74E0003D776A /* Home.storyboard */,
+				183C79431FFB77C3003D776A /* Model */,
+				183C79441FFB77C3003D776A /* View */,
+				183C79421FFB77C3003D776A /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -109,7 +115,9 @@
 		183C79371FFB72F0003D776A /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				183C79251FFB71D9003D776A /* Main.storyboard */,
+				183C79471FFB781E003D776A /* Model */,
+				183C79451FFB781E003D776A /* View */,
+				183C79461FFB781E003D776A /* Controller */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -125,8 +133,62 @@
 		183C79391FFB72F0003D776A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				183C794A1FFB7F17003D776A /* Extension */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		183C79421FFB77C3003D776A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				183C793A1FFB74E0003D776A /* Home.storyboard */,
+				183C79481FFB78AA003D776A /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		183C79431FFB77C3003D776A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		183C79441FFB77C3003D776A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		183C79451FFB781E003D776A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		183C79461FFB781E003D776A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				183C79251FFB71D9003D776A /* Main.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		183C79471FFB781E003D776A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		183C794A1FFB7F17003D776A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				183C794B1FFB7F7B003D776A /* UIBarButtonItem-Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				183C79221FFB71D9003D776A /* AppDelegate.swift in Sources */,
+				183C79491FFB78AA003D776A /* HomeViewController.swift in Sources */,
+				183C794C1FFB7F7B003D776A /* UIBarButtonItem-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
